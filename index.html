@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site - Ma Vidéothèque</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h2>Vidéothèque</h2>
+
+      <ul class="nav-links">
+        <li><a href="#">Films</a></li>
+        <li><a href="#">Séries</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>Ghibli Movies</h1>
+
+      <div>
+        <input
+          type="text"
+          name="movieName"
+          id="inputMovieName"
+          placeholder="Titre du film"
+        />
+      </div>
+
+      <div>
+        <button id="btnSortAz">A-Z</button>
+        <button id="btnSortZa">Z-A</button>
+        <button id="btnNoteDesc">Note +</button>
+        <button id="btnNoteAsc">Note -</button>
+      </div>
+
+      <div class="rangeContainer">
+        <input
+          type="range"
+          name="inputMovieRange"
+          id="inputMovieRange"
+          min="0"
+          max="30"
+          step="1"
+          value="12"
+        />
+        <span id="displayMovieRange">12</span>
+      </div>
+
+      <div>
+        <button id="btnDurationAsc">Durée -</button>
+        <button id="btnDurationDesc">Durée +</button>
+        <button id="btnDateAsc">Date + ancienne</button>
+        <button id="btnDateDesc">Date + récente</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="card">
+        <div class="card-header">
+          <img
+            src="images/affiche-thunderbolts.webp"
+            class="card-header__img"
+            alt="Image du film"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-body__title">Thunderbolts*</h5>
+          <div class="card-body__infos">
+            <p class="card-body__infos_score">Note : <span>4,5/5</span></p>
+            <p class="card-body__infos_duration">
+              Durée : <span>2h 10min</span>
+            </p>
+            <p class="card-body__infos_date">
+              Année de sortie : <span>30 avril 2025</span>
+            </p>
+            <h3>Résumé du film</h3>
+            <p class="card-body__infos_description">
+              <span
+                >Retrouver l'équipe des Thunderbolts* en grand écran au cinéma
+                !</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

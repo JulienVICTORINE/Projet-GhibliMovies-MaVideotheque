@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #212121;
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px;
+  color: white;
+  input[type="text"],
+  button {
+    padding: 10px 15px;
+  }
+  #displayMovieRange {
+    margin-left: 10px;
+  }
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #000;
+  color: white;
+
+  ul {
+    display: flex;
+    gap: 20px;
+
+    li {
+      list-style: none;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        color: #ffcc00;
+      }
+    }
+  }
+
+  h2 {
+    flex: 1;
+    font-size: 1.2em;
+
+    &:hover {
+      color: #ffcc00;
+    }
+  }
+}
+
+/* Card Container */
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Card */
+.card {
+  width: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  background-color: #f9f9f9;
+  transition: transform 0.3s;
+  border: 2px solid brown;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-header img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+/* Card Body */
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-body__title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.card-body__infos h3 {
+  font-size: 1em;
+  margin-bottom: 8px;
+}
+
+.card-body__infos_description {
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.card-body__infos_location {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.card-body__infos_score,
+.card-body__infos_date,
+.card-body__infos_duration {
+  padding: 10px;
+}
